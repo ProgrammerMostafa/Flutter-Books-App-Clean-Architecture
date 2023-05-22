@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_books_app_clean_architecture/features/home/presentation/screens/home_screen.dart';
 
 import '../../core/utils/app_strings.dart';
 import '../../features/splash/presentation/screens/splash_screen.dart';
 
 class Routes {
   static const String splashScreen = '/';
-  static const String quoteScreen = '/quoteScreen';
+  static const String homeScreen = '/homeScreen';
 }
 
 class AppRoutes {
@@ -15,6 +16,11 @@ class AppRoutes {
         return MaterialPageRoute(
           builder: (con) => const SplashScreen(),
         );
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+          builder: (con) => const HomeScreen(),
+        );
+
       // case Routes.quoteScreen:
       //   return MaterialPageRoute(
       //     builder: (con) => BlocProvider<QutoesCubit>(
