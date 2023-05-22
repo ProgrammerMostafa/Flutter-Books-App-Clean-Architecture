@@ -1,3 +1,3 @@
 class ImageAssets {
-  static const String quote = 'assets/images/quote/mdpi.png';
+  static const String logo = 'assets/images/Logo.png';
 }

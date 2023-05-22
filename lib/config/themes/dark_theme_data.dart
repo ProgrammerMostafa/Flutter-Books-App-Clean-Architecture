@@ -2,7 +2,7 @@ import '../../core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 ThemeData darkThemeData() {
-  return ThemeData(
+  return ThemeData.dark().copyWith(
     primaryColor: AppColors.primaryColor,
     scaffoldBackgroundColor: AppColors.bgDarkColor,
     appBarTheme: const AppBarTheme(
