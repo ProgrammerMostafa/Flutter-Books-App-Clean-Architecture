@@ -11,5 +11,19 @@ ThemeData darkThemeData() {
       elevation: 0,
       titleTextStyle: TextStyle(fontSize: 22),
     ),
+    textTheme: TextTheme(
+      bodyMedium: TextStyle(
+        color: AppColors.textDarkColor,
+        fontSize: 22,
+        fontWeight: FontWeight.w600,
+        height: 1.3,
+      ),
+      titleMedium: TextStyle(
+        color: AppColors.textDarkColor,
+        fontSize: 20,
+        fontWeight: FontWeight.w600,
+        height: 1.3,
+      ),
+    ),
   );
 }
