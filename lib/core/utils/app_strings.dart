@@ -1,8 +1,11 @@
 class AppStrings {
   static const String appName = 'Books App';
   static const String bestSeller = 'Best Seller';
+  static const String mainFontFamily = 'Montserrat';
+  static const String gTSectraFineFontFamily = 'GTSectraFine';
 
 
+  
   static const String cacheRandomQuote = 'CACHE_RANDOM_QUOTE';
   static const String contentType = 'Content-Type';
   static const String applicationJson = 'application/json';

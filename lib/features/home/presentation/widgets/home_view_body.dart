@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_books_app_clean_architecture/core/utils/app_strings.dart';
+import 'package:flutter_books_app_clean_architecture/core/utils/styles.dart';
+import 'package:flutter_books_app_clean_architecture/features/home/presentation/widgets/best_seller_list_view_item.dart';
 import 'package:flutter_books_app_clean_architecture/features/home/presentation/widgets/custom_app_bar.dart';
 
 import 'featured_list_view.dart';
@@ -19,8 +21,10 @@ class HomeViewBody extends StatelessWidget {
           const SizedBox(height: 50),
           Text(
             AppStrings.bestSeller,
-            style: Theme.of(context).textTheme.titleMedium,
+            style: Styles.defaultTextStyle(fontSize: 18),
           ),
+          const SizedBox(height: 30),
+          const BestSellerListViewItem(),
         ],
       ),
     );
