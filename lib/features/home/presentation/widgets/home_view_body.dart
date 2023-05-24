@@ -3,7 +3,7 @@ import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/contanst.dart';
 import '../../../../core/utils/styles.dart';
 import 'best_seller_list_view_item.dart';
-import 'custom_app_bar.dart';
+import 'custom_home_app_bar.dart';
 import 'featured_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -18,7 +18,7 @@ class HomeViewBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const CustomAppBar(),
+              const CustomHomeAppBar(),
               const FeaturedListView(),
               const SizedBox(height: 50),
               Padding(

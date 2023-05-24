@@ -3,8 +3,8 @@ import '../../../../core/utils/contanst.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../core/utils/assest_manager.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+class CustomHomeAppBar extends StatelessWidget {
+  const CustomHomeAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget {
           Image.asset(ImageAssets.logo, height: 18),
           const Spacer(),
           IconButton(
-            icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: 22),
+            icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: 20),
             onPressed: () {},
           ),
         ],

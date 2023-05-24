@@ -9,4 +9,5 @@ class AppColors {
   static Color bgDarkColor = HexColor('#100B20');
   static const Color textDarkColor = Colors.white;
   static Color starRatingColor = HexColor('#FFDD4F');
+  static Color buttonColor = HexColor('#EF8262');
 }
