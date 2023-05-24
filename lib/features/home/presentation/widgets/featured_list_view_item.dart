@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/assest_manager.dart';
+import '../../../../core/utils/assest_manager.dart';
 
 class FeaturedListViewItem extends StatelessWidget {
   const FeaturedListViewItem({super.key});

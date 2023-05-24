@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_books_app_clean_architecture/features/home/presentation/screens/home_screen.dart';
 
 import '../../core/utils/app_strings.dart';
+import '../../features/home/presentation/screens/home_screen.dart';
 import '../../features/splash/presentation/screens/splash_screen.dart';
 
 class Routes {

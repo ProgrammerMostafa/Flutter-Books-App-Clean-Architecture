@@ -7,7 +7,7 @@ ThemeData lightThemeData() {
     fontFamily: 'Tajawal',
     primaryColor: AppColors.primaryColor,
     scaffoldBackgroundColor: AppColors.bgLightColor,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       centerTitle: true,
       color: Colors.transparent,
       elevation: 0,

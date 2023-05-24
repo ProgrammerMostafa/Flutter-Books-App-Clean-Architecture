@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/app_colors.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/app_strings.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/assest_manager.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/styles.dart';
-import 'package:flutter_books_app_clean_architecture/features/home/presentation/widgets/book_rating_widget.dart';
+
+import '../../../../core/utils/app_strings.dart';
+import '../../../../core/utils/assest_manager.dart';
+import '../../../../core/utils/contanst.dart';
+import '../../../../core/utils/styles.dart';
+import 'book_rating_widget.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({super.key});
@@ -12,8 +13,12 @@ class BestSellerListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 120,
-      padding: const EdgeInsets.only(right: 20),
+      height: 140,
+      padding: const EdgeInsets.only(
+        right: AppConstant.horizontalPadd * 2,
+        left: AppConstant.horizontalPadd,
+        bottom: 20,
+      ),
       child: Row(
         children: [
           AspectRatio(
