@@ -37,7 +37,14 @@ class HomeViewBody extends StatelessWidget {
         SliverList(
           delegate: SliverChildBuilderDelegate(
             childCount: 20,
-            (context, index) => const BestSellerListViewItem(),
+            (context, index) => const Padding(
+              padding: EdgeInsets.only(
+                right: AppConstant.horizontalPadd * 2,
+                left: AppConstant.horizontalPadd,
+                bottom: 20,
+              ),
+              child: BestSellerListViewItem(),
+            ),
           ),
         ),
       ],

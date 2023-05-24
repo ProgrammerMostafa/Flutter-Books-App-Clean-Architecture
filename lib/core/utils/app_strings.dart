@@ -5,6 +5,8 @@ class AppStrings {
   static const String gTSectraFineFontFamily = 'GTSectraFine';
   static const String freePreview = 'Free preview';
   static const String youCanAlsoLike = 'You can also like';
+  static const String search = 'Search';
+  static const String searchResult = 'Search Result';
 
 
   

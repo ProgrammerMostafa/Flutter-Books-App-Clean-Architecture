@@ -16,14 +16,9 @@ class BestSellerListViewItem extends StatelessWidget {
       onTap: () {
         Navigator.pushNamed(context, Routes.bookDetailsScreen);
       },
-      child: Container(
+      child: SizedBox(
         width: double.infinity,
         height: 140,
-        padding: const EdgeInsets.only(
-          right: AppConstant.horizontalPadd * 2,
-          left: AppConstant.horizontalPadd,
-          bottom: 20,
-        ),
         child: Row(
           children: [
             AspectRatio(

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../widgets/search_view_body.dart';
@@ -8,9 +7,10 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   return const Scaffold(
-      body: SearchViewBody(),
+    return const Scaffold(
+      body: SafeArea(
+        child: SearchViewBody(),
+      ),
     );
   }
 }
-

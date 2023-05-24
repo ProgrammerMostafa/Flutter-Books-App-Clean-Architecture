@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_books_app_clean_architecture/config/routes/routes.dart';
 import '../../../../core/utils/contanst.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../core/utils/assest_manager.dart';
@@ -21,7 +22,9 @@ class CustomHomeAppBar extends StatelessWidget {
           const Spacer(),
           IconButton(
             icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: 20),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, Routes.searchScreen);
+            },
           ),
         ],
       ),
