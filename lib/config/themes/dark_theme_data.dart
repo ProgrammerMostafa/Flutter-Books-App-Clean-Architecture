@@ -12,7 +12,7 @@ ThemeData darkThemeData() {
       elevation: 0,
       titleTextStyle: TextStyle(fontSize: 22),
     ),
-    iconTheme: IconThemeData(
+    iconTheme: const IconThemeData(
       color: Colors.white,
     ),
   );

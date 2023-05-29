@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/contanst.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/styles.dart';
+import '../../../../core/utils/contanst.dart';
+import '../../../../core/utils/styles.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../../../home/presentation/widgets/best_seller_list_view_item.dart';
 import 'custom_search_text_field.dart';

@@ -8,11 +8,9 @@ class AppStrings {
   static const String search = 'Search';
   static const String searchResult = 'Search Result';
 
-
-  
-  static const String cacheRandomQuote = 'CACHE_RANDOM_QUOTE';
   static const String contentType = 'Content-Type';
   static const String applicationJson = 'application/json';
+
   static const String undefinedRoute = 'Undefined Route';
   static const String somethingWrong = 'Something went wrong';
   static const String pleaseTryAgain = 'Please Try Again';

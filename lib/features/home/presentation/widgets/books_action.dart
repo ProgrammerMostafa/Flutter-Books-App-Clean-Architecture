@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/app_colors.dart';
-import 'package:flutter_books_app_clean_architecture/core/utils/app_strings.dart';
-import 'package:flutter_books_app_clean_architecture/core/widgets/custom_button.dart';
+
+import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/app_strings.dart';
+import '../../../../core/widgets/custom_button.dart';
 
 class BooksAction extends StatelessWidget {
   const BooksAction({super.key});

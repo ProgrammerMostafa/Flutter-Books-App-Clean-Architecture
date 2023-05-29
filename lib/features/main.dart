@@ -5,8 +5,8 @@ import '../core/services/service_locator.dart';
 import 'app.dart';
 import 'my_bloc_observer.dart';
 
-void main() async{
-   WidgetsFlutterBinding.ensureInitialized();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   //////////////////////////////////////////
   Bloc.observer = MyBlocObserver();
   //////////////////////////////////////////
@@ -14,5 +14,3 @@ void main() async{
   ///////////////////////////
   runApp(const BooksApp());
 }
-
-

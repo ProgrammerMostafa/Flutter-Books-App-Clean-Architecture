@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_books_app_clean_architecture/features/home/presentation/widgets/book_rating_widget.dart';
-import 'package:flutter_books_app_clean_architecture/features/home/presentation/widgets/books_action.dart';
-import 'package:flutter_books_app_clean_architecture/features/home/presentation/widgets/custom_book_details_app_bar.dart';
-import 'package:flutter_books_app_clean_architecture/features/home/presentation/widgets/custom_book_image.dart';
-import 'package:flutter_books_app_clean_architecture/features/home/presentation/widgets/similar_books_list_view.dart';
+import 'book_rating_widget.dart';
+import 'books_action.dart';
+import 'custom_book_details_app_bar.dart';
+import 'custom_book_image.dart';
+import 'similar_books_list_view.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/contanst.dart';
 import '../../../../core/utils/styles.dart';

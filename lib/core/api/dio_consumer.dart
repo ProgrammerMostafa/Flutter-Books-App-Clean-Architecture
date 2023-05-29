@@ -1,13 +1,14 @@
 import 'dart:convert';
 
+import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
+
 import '../../core/api/api_consumer.dart';
 import '../../core/api/app_interceptors.dart';
 import '../../core/api/end_points.dart';
 import '../../core/api/status_code.dart';
 import '../../core/error/exceptions.dart';
 import '../../core/services/service_locator.dart';
-import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 
 class DioConsumer extends ApiConsumer {
   final Dio client;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_books_app_clean_architecture/features/home/presentation/screens/book_details_screen.dart';
-import 'package:flutter_books_app_clean_architecture/features/search/presentation/screens/search_screen.dart';
+import '../../features/home/presentation/screens/book_details_screen.dart';
+import '../../features/search/presentation/screens/search_screen.dart';
 
 import '../../core/utils/app_strings.dart';
 import '../../features/home/presentation/screens/home_screen.dart';
