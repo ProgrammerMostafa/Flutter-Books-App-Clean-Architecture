@@ -10,4 +10,5 @@ class AppColors {
   static const Color textDarkColor = Colors.white;
   static Color starRatingColor = HexColor('#FFDD4F');
   static Color buttonColor = HexColor('#EF8262');
+  static Color shimmerColor = Colors.grey.shade400;
 }

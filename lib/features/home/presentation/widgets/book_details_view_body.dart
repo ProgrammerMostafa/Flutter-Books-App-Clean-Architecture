@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+
+import '../../../../core/utils/app_strings.dart';
+import '../../../../core/utils/contanst.dart';
+import '../../../../core/utils/styles.dart';
 import 'book_rating_widget.dart';
 import 'books_action.dart';
 import 'custom_book_details_app_bar.dart';
 import 'custom_book_image.dart';
 import 'similar_books_list_view.dart';
-import '../../../../core/utils/app_strings.dart';
-import '../../../../core/utils/contanst.dart';
-import '../../../../core/utils/styles.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -30,7 +31,7 @@ class BookDetailsViewBody extends StatelessWidget {
                   padding: EdgeInsets.symmetric(
                     horizontal: AppConstant.screenWidth(context) * 0.22,
                   ),
-                  child: const CustomBookImage(),
+                  child: const CustomBookImage(imageUrl: '',),
                 ),
                 const SizedBox(height: 40),
                 Text(

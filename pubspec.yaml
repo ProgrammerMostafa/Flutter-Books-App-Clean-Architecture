@@ -7,26 +7,28 @@ environment:
   sdk: '>=2.19.1 <3.0.0'
 
 dependencies:
-  bloc: null
-  cupertino_icons: null
-  dartz: null
-  dio: null
-  equatable: null
   flutter:
     sdk: flutter
-  flutter_bloc: null
   flutter_localizations:
     sdk: flutter
-  fluttertoast: null
-  font_awesome_flutter: ^10.4.0
-  get_it: null
-  google_fonts: ^4.0.4
-  http: null
-  internet_connection_checker: null
-  shared_preferences: null
+  cupertino_icons:
+  bloc:
+  flutter_bloc:
+  dartz:
+  dio:
+  equatable:
+  fluttertoast:
+  font_awesome_flutter: 
+  get_it: ^7.6.0
+  google_fonts:
+  http:
+  internet_connection_checker:
+  shared_preferences:
+  cached_network_image: ^3.2.3
+  shimmer: ^3.0.0
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_lints:
   flutter_test:
     sdk: flutter
 
@@ -38,7 +40,6 @@ flutter:
     - assets/images/
     - assets/fonts/
   #   - images/a_dot_ham.jpeg
-
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
@@ -61,6 +62,5 @@ flutter:
       fonts:
         - asset: assets/fonts/GTSectraFine-Regular.ttf
           weight: 400
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

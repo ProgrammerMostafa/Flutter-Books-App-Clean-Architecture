@@ -5,7 +5,10 @@ import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/styles.dart';
 
 class BookRatingWidget extends StatelessWidget {
-  const BookRatingWidget({super.key});
+  final double? averageRating;
+  final int? ratingsCount;
+
+  const BookRatingWidget({super.key, this.averageRating, this.ratingsCount});
 
   @override
   Widget build(BuildContext context) {
@@ -19,14 +22,14 @@ class BookRatingWidget extends StatelessWidget {
         ),
         const SizedBox(width: 8.0),
         Text(
-          '4.8',
+          '$averageRating',
           style: Styles.defaultTextStyle(fontSize: 16).copyWith(
             fontWeight: FontWeight.w500,
           ),
         ),
         const SizedBox(width: 6.0),
         Text(
-          '(2390)',
+          '($ratingsCount)',
           style: Styles.defaultTextStyle(fontSize: 14).copyWith(
             fontWeight: FontWeight.w400,
             color: Colors.white.withOpacity(0.5),

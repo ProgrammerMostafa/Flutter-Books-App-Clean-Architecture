@@ -1,32 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../utils/app_strings.dart';
+import '../utils/styles.dart';
 
-class ErrorWidgetContainer extends StatelessWidget {
-  const ErrorWidgetContainer({super.key});
+class ErrorWidgetWhenFetchData extends StatelessWidget {
+  final String errorMsg;
+  const ErrorWidgetWhenFetchData({super.key, required this.errorMsg});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const Icon(
-          Icons.warning_amber_rounded,
-          color: Colors.orange,
-          size: 60,
-        ),
-        const SizedBox(height: 15),
-        Text(
-          AppStrings.somethingWrong,
-          style: Theme.of(context).textTheme.bodyMedium,
-          textAlign: TextAlign.center,
-        ),
-        const SizedBox(height: 10),
-        Text(
-          AppStrings.pleaseTryAgain,
-          style: Theme.of(context).textTheme.bodyMedium,
-          textAlign: TextAlign.center,
-        ),
-      ],
+    return Center(
+      child: Text(
+        errorMsg,
+        style: Styles.defaultTextStyle(fontSize: 18),
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }

@@ -38,7 +38,7 @@ class BooksRemoteDataSource extends BaseBooksRemoteDataSource {
       },
     );
     return List<BookModel>.from(
-      (response.data['items'] as List).map((e) => BookModel.fromJson(e)),
+      (response['items'] as List).map((e) => BookModel.fromJson(e)),
     );
   }
 
@@ -52,7 +52,7 @@ class BooksRemoteDataSource extends BaseBooksRemoteDataSource {
       },
     );
     return List<BookModel>.from(
-      (response.data['items'] as List).map((e) => BookModel.fromJson(e)),
+      (response['items'] as List).map((e) => BookModel.fromJson(e)),
     );
   }
 }

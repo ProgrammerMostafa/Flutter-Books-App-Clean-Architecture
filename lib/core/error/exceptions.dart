@@ -18,6 +18,9 @@ class FetchDataException extends ServerException {
 class BadRequestException extends ServerException {
   const BadRequestException([message]) : super(errorMessage: 'Bad Request');
 }
+class RequestCancelledException extends ServerException {
+  const RequestCancelledException([message]) : super(errorMessage: 'Request Cancelled');
+}
 
 class UnauthorizedException extends ServerException {
   const UnauthorizedException([message]) : super(errorMessage: 'Unauthorized');

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/contanst.dart';
 import '../../../../core/utils/styles.dart';
-import 'best_seller_list_view_item.dart';
+import 'best_seller_list_view.dart';
 import 'custom_home_app_bar.dart';
 import 'featured_list_view.dart';
 
@@ -34,19 +35,7 @@ class HomeViewBody extends StatelessWidget {
             ],
           ),
         ),
-        SliverList(
-          delegate: SliverChildBuilderDelegate(
-            childCount: 20,
-            (context, index) => const Padding(
-              padding: EdgeInsets.only(
-                right: AppConstant.horizontalPadd * 2,
-                left: AppConstant.horizontalPadd,
-                bottom: 20,
-              ),
-              child: BestSellerListViewItem(),
-            ),
-          ),
-        ),
+        const BestSellerListView(),
       ],
     );
   }

@@ -113,10 +113,10 @@ class DioConsumer extends ApiConsumer {
             throw const InternalServerErrorException();
         }
         break;
-      case DioErrorType.cancel:
-        break;
       case DioErrorType.unknown:
-        break;
+        throw const BadRequestException();
+      case DioErrorType.cancel:
+        throw const RequestCancelledException();
     }
   }
 }

@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 
 import '../../../../../core/usecases/base_usecase.dart';
 import '../../../domain/entities/book.dart';
-import '../../../domain/usecases/fetch_Featured_books_usecase.dart';
+import '../../../domain/usecases/fetch_featured_books_usecase.dart';
 
 part 'featured_books_state.dart';
 

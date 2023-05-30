@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+
+import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/contanst.dart';
 import '../../../../core/utils/styles.dart';
-import '../../../../core/utils/app_strings.dart';
-import '../../../home/presentation/widgets/best_seller_list_view_item.dart';
 import 'custom_search_text_field.dart';
 
 class SearchViewBody extends StatelessWidget {
@@ -45,7 +45,7 @@ class SearchResultListView extends StatelessWidget {
           right: AppConstant.horizontalPadd,
           bottom: 20,
         ),
-        child: BestSellerListViewItem(),
+        //child: BestSellerListViewItem(),
       ),
     );
   }
