@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../features/home/domain/entities/book.dart';
 import '../../features/home/presentation/screens/book_details_screen.dart';
 import '../../features/search/presentation/screens/search_screen.dart';
 
@@ -25,8 +26,9 @@ class AppRoutes {
           builder: (con) => const HomeScreen(),
         );
       case Routes.bookDetailsScreen:
+        Book bookData = settings.arguments as Book;
         return MaterialPageRoute(
-          builder: (con) => const BookDetialsScreen(),
+          builder: (con) => BookDetialsScreen(bookData: bookData),
         );
       case Routes.searchScreen:
         return MaterialPageRoute(

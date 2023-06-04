@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 class Book extends Equatable {
   final String id;
   final String title;
-  final String publishedDate;
+  final String? publishedDate;
   final String imageUrl;
   final String previewLink;
   final List<String>? authors;

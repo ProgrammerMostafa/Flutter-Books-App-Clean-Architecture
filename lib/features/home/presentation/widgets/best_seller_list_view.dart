@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../../../core/utils/app_colors.dart';
-import '../../../../core/widgets/custom_shimmer_image.dart';
+import '../../../../core/utils/contanst.dart';
+import '../../../../core/widgets/custom_shimmer_list_item.dart';
 import '../../../../core/widgets/error_widget.dart';
 import '../cubit/featured_books_cubit/featured_books_cubit.dart';
 import 'best_seller_list_view_item.dart';
@@ -25,33 +24,15 @@ class BestSellerListView extends StatelessWidget {
                 if (state is FeaturedBooksSuccessState) {
                   return BestSellerListViewItem(bookData: state.books[index]);
                 } else {
-                  return SizedBox(
+                  return Container(
+                    width: double.infinity,
                     height: 140,
-                    child: Row(
-                      children: [
-                        const CustomShimmerImage(),
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Container(
-                                height: 20,
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: AppColors.shimmerColor,
-                                ),
-                              ),
-                              Container(
-                                height: 20,
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: AppColors.shimmerColor,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
+                    padding: const EdgeInsets.only(
+                      right: AppConstant.horizontalPadd * 2,
+                      left: AppConstant.horizontalPadd,
+                      bottom: 20,
                     ),
+                    child: const CustomShimmerListItem(),
                   );
                 }
               },

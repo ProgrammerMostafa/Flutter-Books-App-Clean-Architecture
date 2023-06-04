@@ -18,9 +18,9 @@ class BooksRemoteDataSource extends BaseBooksRemoteDataSource {
     final response = await apiConsumer.getData(
       EndPoints.booksPath,
       queryParameters: {
-        'filter': 'free-ebooks',
+        'filter': EndPoints.booksFilter,
         'orderBy': 'newest',
-        'q': 'Programming',
+        'q': EndPoints.booksCategory,
       },
     );
     return List<BookModel>.from(
@@ -33,8 +33,8 @@ class BooksRemoteDataSource extends BaseBooksRemoteDataSource {
     final response = await apiConsumer.getData(
       EndPoints.booksPath,
       queryParameters: {
-        'filter': 'free-ebooks',
-        'q': 'Programming',
+        'filter': EndPoints.booksFilter,
+        'q': EndPoints.booksCategory,
       },
     );
     return List<BookModel>.from(
@@ -47,8 +47,8 @@ class BooksRemoteDataSource extends BaseBooksRemoteDataSource {
     final response = await apiConsumer.getData(
       EndPoints.booksPath,
       queryParameters: {
-        'filter': 'free-ebooks',
-        'q': 'Programming',
+        'filter': EndPoints.booksFilter,
+        'q': EndPoints.booksCategory,
       },
     );
     return List<BookModel>.from(

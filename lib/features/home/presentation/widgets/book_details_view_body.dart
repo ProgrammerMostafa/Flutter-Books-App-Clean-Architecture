@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_books_app_clean_architecture/features/home/data/models/book_model.dart';
+import 'package:flutter_books_app_clean_architecture/features/home/domain/entities/book.dart';
 
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/contanst.dart';
@@ -10,7 +12,8 @@ import 'custom_book_image.dart';
 import 'similar_books_list_view.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
-  const BookDetailsViewBody({super.key});
+  final Book bookData;
+  const BookDetailsViewBody({super.key, required this.bookData});
 
   @override
   Widget build(BuildContext context) {
@@ -31,11 +34,11 @@ class BookDetailsViewBody extends StatelessWidget {
                   padding: EdgeInsets.symmetric(
                     horizontal: AppConstant.screenWidth(context) * 0.22,
                   ),
-                  child: const CustomBookImage(imageUrl: '',),
+                  child: CustomBookImage(imageUrl: bookData.imageUrl),
                 ),
                 const SizedBox(height: 40),
                 Text(
-                  'The Jungle Book',
+                  bookData.title,
                   style: Styles.defaultTextStyle(fontSize: 30).copyWith(
                     fontWeight: FontWeight.w400,
                     fontFamily: AppStrings.gTSectraFineFontFamily,
@@ -43,14 +46,20 @@ class BookDetailsViewBody extends StatelessWidget {
                 ),
                 const SizedBox(height: 6),
                 Text(
-                  'Rudyard Kipling',
+                  bookData.authors == null ? '7mada' : bookData.authors![0],
                   style: Styles.defaultTextStyle(fontSize: 18).copyWith(
                     fontWeight: FontWeight.w400,
                     color: Colors.white.withOpacity(0.7),
                   ),
                 ),
                 const SizedBox(height: 16),
-                const BookRatingWidget(),
+                if (bookData.averageRating != null &&
+                    bookData.ratingsCount != null) ...[
+                  BookRatingWidget(
+                    averageRating: bookData.averageRating,
+                    ratingsCount: bookData.ratingsCount,
+                  ),
+                ],
                 const SizedBox(height: 30),
                 const BooksAction(),
                 const Expanded(child: SizedBox(height: 30)),

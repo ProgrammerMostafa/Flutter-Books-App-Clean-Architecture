@@ -6,10 +6,12 @@ class CustomButton extends StatelessWidget {
   final Color textColor;
   final Color backgroundColor;
   final BorderRadiusGeometry borderRadius;
+  final void Function()? onPressed;
 
   const CustomButton({
     super.key,
     required this.text,
+    this.onPressed,
     this.backgroundColor = Colors.white,
     this.textColor = Colors.black,
     this.borderRadius = const BorderRadius.all(Radius.circular(16)),
@@ -18,7 +20,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: ButtonStyle(
         shape: MaterialStatePropertyAll(
           RoundedRectangleBorder(borderRadius: borderRadius),
